@@ -52,8 +52,8 @@ scp ubuntu@ec2-54-145-164-143.compute-1.amazonaws.com:/tmp/alip.tar.gz ~/Dropbox
 
 #### Step 3: Test Deployment
 
-./index.sh _deploy --target=ec2-184-73-138-130.compute-1.amazonaws.com
-./signal.sh alip --target=ec2-184-73-138-130.compute-1.amazonaws.com
+./index.sh _deploy --target=ec2-34-207-126-35.compute-1.amazonaws.com
+./signal.sh alip --target=ec2-34-207-126-35.compute-1.amazonaws.com
 
 
 

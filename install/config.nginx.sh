@@ -33,7 +33,7 @@ server {
 	#rewrite ^/tour\$ / permanent;
 	# ...Nevermind, we want these to keep url:
 	location ~ ^/(contact/merch|music/tour)/?\$ {
-		try_files /index.html $request_uri;
+		try_files /index.html \$request_uri;
 	}
 
 
