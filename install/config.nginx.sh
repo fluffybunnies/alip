@@ -30,6 +30,12 @@ server {
 		return 404;
 	}
 
+	# Custom urls that point at index.html
+	rewrite ^/contact\$ / redirect permanent;
+	rewrite ^/merch\$ / redirect permanent;
+	rewrite ^/music\$ / redirect permanent;
+	rewrite ^/tour\$ / redirect permanent;
+
 	location / {
 		# set expire headers for assets
 		if (\$request_uri ~* "\.(ico|css|js|gif|jpe?g|png|svg|swf)\$") {
