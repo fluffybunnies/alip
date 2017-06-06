@@ -31,10 +31,15 @@ server {
 	}
 
 	# Custom urls that point at index.html
-	rewrite ^/contact\$ / permanent;
-	rewrite ^/merch\$ / permanent;
-	rewrite ^/music\$ / permanent;
-	rewrite ^/tour\$ / permanent;
+	#rewrite ^/contact\$ / permanent;
+	#rewrite ^/merch\$ / permanent;
+	#rewrite ^/music\$ / permanent;
+	#rewrite ^/tour\$ / permanent;
+	# ...Nevermind, we want these to keep url:
+	location ~ ^/(contact/merch|music/tour)/\$ {
+		try_files /index.html =404;
+	}
+
 
 	location / {
 		# set expire headers for assets
