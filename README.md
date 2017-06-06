@@ -3,6 +3,9 @@
 
 <!--
 
+Note: Create ubuntu 14.04, 16 does not have all apt-get packages yet
+
+
 #### Step 1: Copy Site
 
 # Deploy static-bak to fresh instance
