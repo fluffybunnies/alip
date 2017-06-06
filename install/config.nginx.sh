@@ -23,11 +23,7 @@ server {
 
 	# Get default wget index.html load on base domain request
 	location = / {
-		try_files /index.html =404;
-	}
-	# Disable http://mydomain.com/index as a duplicate content
-	location = /index {
-		return 404;
+		try_files /index.html $request_uri;
 	}
 
 	# Custom urls that point at index.html
@@ -36,8 +32,8 @@ server {
 	#rewrite ^/music\$ / permanent;
 	#rewrite ^/tour\$ / permanent;
 	# ...Nevermind, we want these to keep url:
-	location ~ ^/(contact/merch|music/tour)/\$ {
-		try_files /index.html =404;
+	location ~ ^/(contact/merch|music/tour)/?\$ {
+		try_files /index.html $request_uri;
 	}
 
 
