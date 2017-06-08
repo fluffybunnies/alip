@@ -708,3 +708,14 @@ body.contact #contact {
       -webkit-transform: translateY(0px);
       -ms-transform: translateY(0px);
       transform: translateY(0px); } }
+/** below this are edits from original **/
+.text-content {
+	font-family: "G",helvetica,arial;
+	color: #fff;
+}
+.text-content h1 {
+	font-family: "garamond",sans-serif,times;
+	font-size: 22px;
+	margin-bottom: 1em;
+}
+
