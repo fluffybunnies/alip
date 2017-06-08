@@ -358,24 +358,24 @@ nav {
 a, a:hover {
   text-decoration: none; }
 
-html body.come-up #merch, html body.come-up #tour, html body.come-up #music, html body.come-up #contact {
+html body.come-up #merch, html body.come-up #tour, html body.come-up #about, html body.come-up #contact {
   -webkit-transform: translateY(-20px);
   -ms-transform: translateY(-20px);
   transform: translateY(-20px);
   opacity: 0; }
 
-body.tour #contact-spot, body.tour #open-more-info, body.tour #open-less-info, body.music #contact-spot, body.music #open-more-info, body.music #open-less-info, body.contact #contact-spot, body.contact #open-more-info, body.contact #open-less-info, body.merch #contact-spot, body.merch #open-more-info, body.merch #open-less-info {
+body.tour #contact-spot, body.tour #open-more-info, body.tour #open-less-info, body.about #contact-spot, body.about #open-more-info, body.about #open-less-info, body.contact #contact-spot, body.contact #open-more-info, body.contact #open-less-info, body.merch #contact-spot, body.merch #open-more-info, body.merch #open-less-info {
   visibility: visible;
   opacity: 1; }
 
-body.tour #opacity-ting, body.tour #logo, body.music #opacity-ting, body.music #logo, body.contact #opacity-ting, body.contact #logo, body.merch #opacity-ting, body.merch #logo {
+body.tour #opacity-ting, body.tour #logo, body.about #opacity-ting, body.about #logo, body.contact #opacity-ting, body.contact #logo, body.merch #opacity-ting, body.merch #logo {
   opacity: 1;
   visibility: visible; }
 
-body.tour #logo, body.music #logo, body.contact #logo, body.merch #logo {
+body.tour #logo, body.about #logo, body.contact #logo, body.merch #logo {
   cursor: pointer; }
 
-body.tour #splash-ting, body.music #splash-ting, body.contact #splash-ting, body.merch #splash-ting {
+body.tour #splash-ting, body.about #splash-ting, body.contact #splash-ting, body.merch #splash-ting {
   visibility: hidden;
   opacity: 0; }
 
@@ -397,7 +397,7 @@ body.tour #tour {
   -ms-transform: none;
   transform: none; }
 
-body.music #music {
+body.about #about {
   visibility: visible;
   -webkit-transition: 0.5s ease-in-out all;
   transition: 0.5s ease-in-out all;
@@ -415,7 +415,7 @@ body.contact #contact {
   -ms-transform: none;
   transform: none; }
 
-#tour, #music, #contact, #merch {
+#tour, #about, #contact, #merch {
   -webkit-transition: none;
   transition: none;
   opacity: 0;
@@ -481,15 +481,15 @@ body.contact #contact {
     position: relative;
     margin: 0 auto; }
 
-#music {
+#about {
   width: 100%; }
 
-#music-container {
+#about-container {
   width: 99%;
   -webkit-transform: translateY(25px);
   -ms-transform: translateY(25px);
   transform: translateY(25px); }
-  #music-container .music-ting {
+  #about-container .about-ting {
     -webkit-flex-basis: 33%;
     -ms-flex-preferred-size: 33%;
     flex-basis: 33%;
@@ -500,9 +500,9 @@ body.contact #contact {
     margin-bottom: 50px;
     -webkit-transition: 0.3s ease-in-out opacity;
     transition: 0.3s ease-in-out opacity; }
-    #music-container .music-ting:hover {
+    #about-container .about-ting:hover {
       opacity: 0.3; }
-    #music-container .music-ting img {
+    #about-container .about-ting img {
       height: 100%; }
 
 .contact-sub {
@@ -636,7 +636,7 @@ body.contact #contact {
     -webkit-transform: scale(0.8, 0.8);
     -ms-transform: scale(0.8, 0.8);
     transform: scale(0.8, 0.8); }
-  #music-container .music-ting {
+  #about-container .about-ting {
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -644,7 +644,7 @@ body.contact #contact {
     padding: 20px;
     max-height: 80px;
     height: 80px; }
-  .music-sub {
+  .about-sub {
     width: 99%; }
   .section-wrap section {
     padding: 120px 0; }
@@ -659,7 +659,7 @@ body.contact #contact {
     padding-left: 40px;
     padding-right: 40px;
     text-align: center; }
-  .contact-sub, .music-sub {
+  .contact-sub, .about-sub {
     width: 98%; }
   }
   #tour-dates { 
