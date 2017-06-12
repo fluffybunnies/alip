@@ -36,59 +36,6 @@ var contactBottom = $('#contact-bottom');
 
 console.log('%c ✌🏻', 'font-size: 40px');
 
-$.get('//danielcaesar.com/admin/wp-json/wp/v2/pages/', function (data) {
-
-	var dData = data[0].acf;
-
-	dSubtitlePost = dData.subtitles_container;
-	// let dSubtitles = dData.background_video_subtitles;
-
-	// dSubtitlePost = dSubtitles.replace(/<p>/g, '').replace(/<\/p>/g, '').replace(/<br \/>/g, '');
-
-	// console.log(dSubtitles);
-
-	var dVideo = dData.background_video;
-	var dYt = dData.splash_youtube_url;
-	var updatedDYt = dYt.split('=')[1];
-
-	var dTourDates = dData.tour_container;
-	var dTourPre = '';
-
-	var dTourMap = dTourDates.map(function (tour) {
-
-		dTourPre += '\n\t\t<a target="_blank" href="' + tour.tour_link + '" class="tour-date">\n\t\t\t<div class="date">' + tour.tour_date + '</div>\n\t\t\t<div class="place"><span class="first">' + tour.tour_venue + '</span><span class="snd"> ' + tour.tour_city + '</span></div>\n\t\t</a>\n\t\t';
-	});
-
-	var dContactTop = dData.contact_top_container;
-	var dContactTopPre = '';
-
-	var dContactTopMap = dContactTop.map(function (contact) {
-
-		dContactTopPre += '\n\t\t<div class="contact">\n\t\t\t<div class="contact-title">' + contact.contact_top_title + '</div>\n\t\t\t<a href="mailto:' + contact.contact_top_email + '" class="contact-email">' + contact.contact_top_email + '</a>\n\t\t</div>\n\t\t';
-	});
-
-	var dContactBottom = dData.contact_bottom_container;
-	var dContactBottomPre = '';
-
-	var dContactBottomMap = dContactBottom.map(function (contact) {
-
-		dContactBottomPre += '\n\t\t<div class="contact">\n\t\t\t<div class="contact-title">' + contact.contact_bottom_title + '\n\t\t\t\t<sup>' + contact.contact_bottom_subtitle + '</sup>\n\t\t\t</div>\n\t\t\t<a href="mailto:' + contact.contact_bottom_email + '" class="contact-email">' + contact.contact_bottom_email + '</a>\n\t\t</div>\n\t\t';
-	});
-
-	contactBottom.html(dContactBottomPre);
-	contactTop.html(dContactTopPre);
-	tourDates.html(dTourPre);
-
-	// if (postWindowLoc == '') {
-	// 	youtubeTing.attr('src', `https://www.youtube.com/embed/${updatedDYt}?modestbranding=0&controls=0&autoplay=1&showinfo=0`)
-	// } 
-
-	videoTing.attr('src', dVideo);
-
-	if (dSubtitlePost) {
-		runSubtitles(dSubtitlePost);
-	}
-});
 
 enter.click(function () {
 	splashTing.addClass('gone');
