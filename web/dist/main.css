@@ -710,6 +710,8 @@ body.contact #contact {
       transform: translateY(0px); } }
 /** below this are edits from original **/
 .text-content {
+	max-width: 60vw; /* Fix issue where content was being pushed down the page; 60vw = 60% screen width */
+	margin: 0 auto; /* Center the content now that we have given it a maximum width */
 	font-family: "G",helvetica,arial;
 	color: #fff;
 }
