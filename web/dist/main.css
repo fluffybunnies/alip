@@ -46,13 +46,13 @@ table {
   border-spacing: 0; }
 
 @font-face {
-  font-family: 'G';
-  src: url("g.otf");
+  font-family: 'Helvetica-ultralight';
+  src: url("helvetica-neue-ultralight-593dd99606bd0.ttf");
   font-weight: 200; }
 
 @font-face {
-  font-family: 'G';
-  src: url("gm.otf");
+  font-family: 'Helvetica-ultralight';
+  src: url("helvetica-neue-ultralight-593dd99606bd0.ttf");
   font-weight: 400; }
 
 @font-face {
