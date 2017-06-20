@@ -482,7 +482,9 @@ body.contact #contact {
     margin: 0 auto; }
 
 #about {
-  width: 100%; }
+  width: 100%;
+letter-spacing: 0.1em;
+}
 
 #about-container {
   width: 99%;
