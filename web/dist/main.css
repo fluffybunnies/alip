@@ -564,63 +564,12 @@ text-align: left;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
-
-#tour-dates {
-  z-index: 1;
-  font-weight: 200;
-  max-width: 850px;
-  -webkit-transform: translateY(60px);
-  -ms-transform: translateY(60px);
-  transform: translateY(60px);
-  width: 99%; }
-
-.tour-date {
-  margin-bottom: 80px;
-  -webkit-flex-basis: 50%;
-  -ms-flex-preferred-size: 50%;
-  flex-basis: 50%;
-  box-sizing: border-box;
-  padding: 0 20px;
-  width: 45%;
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
+#tour-font {
+  font-family: "G", Helvetica, Arial;
   color: white;
-  -webkit-transition: 0.3s ease-in-out color;
-  transition: 0.3s ease-in-out color; }
-  .tour-date:hover {
-    color: rgba(255, 255, 255, 0.6); }
-
-.done.tour-date {
-  cursor: default; }
-  .done.tour-date:hover {
-    color: white; }
-  .done.tour-date .place .first {
-    text-decoration: line-through; }
-
-.date {
-  font-size: 11px;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
-  margin-bottom: 15px;
-  font-family: "G", Helvetica, Arial; }
-
-.place {
-  font-size: 30px;
-  font-family: "garamond", Sans-serif, Times;
-  margin: 10px auto;
-  margin-bottom: 7px; }
-  .place span.snd {
-    font-family: "G", Helvetica, Arial;
-    font-style: normal;
-    font-size: 22px;
-    display: block;
-    margin-left: 5px; }
-
-.city {
-  font-family: "garamond", Sans-serif, Times;
-  font-style: italic;
-  font-size: 20px; }
+  letter-spacing: 0.3em;
+  font-size: 16px; }
 
 .opacity {
   position: absolute;
