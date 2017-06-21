@@ -66,6 +66,11 @@ table {
   font-weight: 400; }
 
 @font-face {
+  font-family: 'G';
+  src: url("helvetica-neue-ultralight-593dd99606bd0.ttf");
+  font-weight: 700; }
+
+@font-face {
   font-family: 'garamond';
   src: url("garamond.eot");
   src: url("garamond.woff");
