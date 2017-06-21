@@ -491,7 +491,7 @@ body.contact #contact {
     position: relative;
     margin: 0 auto; }
 
-#about {
+#about .text-content {
   width: 100%;
 letter-spacing: 0.1em;
 text-transform: uppercase;
