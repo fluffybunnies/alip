@@ -45,6 +45,16 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+
+@font-face {
+ 	font-family: 'OG';
+ 	src: url("g.otf");
+	font-weight: 200; }
+@font-face {
+	font-family: 'OG';
+	src: url("gm.otf");
+	font-weight: 400; }
+
 @font-face {
   font-family: 'G';
   src: url("helvetica-neue-ultralight-593dd99606bd0.ttf");
@@ -337,7 +347,7 @@ nav {
   top: 45%; }
 
 .nav-link {
-  font-family: "G", Helvetica, Arial;
+  font-family: "OG", Helvetica, Arial;
   cursor: pointer;
   font-weight: 200;
   letter-spacing: 0.03em;
