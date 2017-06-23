@@ -439,7 +439,7 @@ body.contact #contact {
   -ms-transform: translateY(20px);
   transform: translateY(20px); }
 
-#merch {
+#merch,#tour {
   font-family: "G", Helvetica, Arial;
   color: white;
   text-transform: uppercase;
