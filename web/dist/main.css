@@ -531,11 +531,11 @@ text-align: left;
   width: 100%;
   text-align: left;
   color: white;
-  letter-spacing: 0.01em;
   padding-left: 20vw;
   padding-right: 20vw; }
   #contact a {
-    color: white; }
+    color: white;
+    letter-spacing: 0.01em;}
   #contact .contact-wrap {
     -webkit-transform: translateX(50px) translateY(20px);
     -ms-transform: translateX(50px) translateY(20px);
