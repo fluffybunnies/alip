@@ -8,7 +8,7 @@ var tourLink = $('#tour-link'),
     splashTing = $('#splash-ting'),
     subtitle = $('#subtitle'),
     logo = $('#logo'),
-    videoElement = $('#video video')[0],
+//    videoElement = $('#video video')[0],
     openMore = $('.much-toggle'),
     contactSpot = $('#contact-spot'),
     dSubtitlePost;
@@ -46,15 +46,15 @@ enter.click(function () {
 
 // mute video
 
-videoElement.addEventListener('click', function () {
-	if (videoElement.muted) {
-		videoElement.muted = false;
-		videoElement.classList.remove('muted');
-	} else {
-		videoElement.muted = true;
-		videoElement.classList.add('muted');
-	}
-});
+// videoElement.addEventListener('click', function () {
+// 	if (videoElement.muted) {
+// 		videoElement.muted = false;
+// 		videoElement.classList.remove('muted');
+// 	} else {
+// 		videoElement.muted = true;
+// 		videoElement.classList.add('muted');
+// 	}
+// });
 
 // var rndmNum = Math.floor(Math.random() * (videosList.length + 1 - 1 + 0));
 // // videoElement.src = videosList[rndmNum];
