@@ -686,4 +686,9 @@ text-align: left;
 	font-size: 22px;
 	margin-bottom: 1em;
 }
+@media (max-width:400px) {
+	.contact-sub .text-content p {
+		font-size: 85%;
+	}
+}
 
