@@ -135,7 +135,7 @@ body {
   pointer-events: none;
   width: 5px; }
 
-#video video {
+#video video, #video iframe {
   position: fixed;
   top: 50%;
   left: 50%;
