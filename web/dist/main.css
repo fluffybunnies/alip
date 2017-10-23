@@ -142,10 +142,12 @@ body {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  min-height: 100%;
-  min-width: 100%;
-  height: auto !important;
-  width: auto !important;
+  /* BEGIN simulate background-size: cover */
+  width: 100vw;
+  height: 56.25vw;
+  min-height: 100vh;
+  min-width: 177.77vh;
+  /* END simulate background-size: cover */
   display: block;
   cursor: url("../assets/mtest.png") 5 5, pointer; }
 
